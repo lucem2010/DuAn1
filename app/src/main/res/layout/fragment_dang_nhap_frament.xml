@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="frament.DangNhapFrament">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sunnyteam"></ImageView>
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:id="@+id/edt_emaiDN"
+    android:padding="10dp"
+    android:hint="Email"
+    android:drawableRight="@drawable/baseline_email_24"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/boder_edt"></EditText>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/edt_MkDN"
+            android:padding="10dp"
+            android:hint="Mật khẩu"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_edt"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/eye_DN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/edt_MkDN"
+            android:layout_alignRight="@id/edt_MkDN"
+            android:layout_alignTop="@id/edt_MkDN"
+            android:padding="10dp"
+            android:src="@drawable/matnham"
+            android:contentDescription="Toggle password visibility" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chk_NhoTK"></CheckBox>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhớ tài khoản "
+        android:textStyle="bold"></TextView>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        android:textStyle="bold"
+        android:id="@+id/tvQmk"></TextView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Đăng nhập"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#EA981D"
+        android:id="@+id/btn_DangNhap"></Button>
+    <ProgressBar
+        android:id="@+id/ProgressBarDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_below="@id/btn_DangNhap"
+        android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
